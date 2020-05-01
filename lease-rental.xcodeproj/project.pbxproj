@@ -7,66 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */; };
 		CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40DE245B50410025DC25 /* AppDelegate.swift */; };
 		CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40E0245B50410025DC25 /* SceneDelegate.swift */; };
-		CE8E40E3245B50410025DC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40E2245B50410025DC25 /* ViewController.swift */; };
-		CE8E40E6245B50410025DC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E4245B50410025DC25 /* Main.storyboard */; };
 		CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E7245B50420025DC25 /* Assets.xcassets */; };
 		CE8E40EB245B50420025DC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */; };
-		CE8E40F6245B50420025DC25 /* lease_rentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40F5245B50420025DC25 /* lease_rentalTests.swift */; };
-		CE8E4101245B50420025DC25 /* lease_rentalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4100245B50420025DC25 /* lease_rentalUITests.swift */; };
+		CE8E410F245B52930025DC25 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E410E245B52930025DC25 /* BaseViewController.swift */; };
+		CE8E4112245B53CF0025DC25 /* LeasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4110245B53CF0025DC25 /* LeasesViewController.swift */; };
+		CE8E4113245B53CF0025DC25 /* LeasesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E4111245B53CF0025DC25 /* LeasesViewController.xib */; };
+		CE8E4115245B55B60025DC25 /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4114245B55B60025DC25 /* CommunicationManager.swift */; };
+		CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4116245B56690025DC25 /* DataExtension.swift */; };
+		CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4118245B57750025DC25 /* BundleExtension.swift */; };
+		CE8E411B245BD7E40025DC25 /* LeasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E411A245BD7E40025DC25 /* LeasesViewModel.swift */; };
+		CE8E411D245BEB110025DC25 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8E411C245BEB110025DC25 /* Settings.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CE8E40F2245B50420025DC25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE8E40D3245B50410025DC25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE8E40DA245B50410025DC25;
-			remoteInfo = "lease-rental";
-		};
-		CE8E40FD245B50420025DC25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE8E40D3245B50410025DC25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE8E40DA245B50410025DC25;
-			remoteInfo = "lease-rental";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		CE8E40DB245B50410025DC25 /* lease-rental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lease-rental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseService.swift; sourceTree = "<group>"; };
+		CE8E40DB245B50410025DC25 /* Lease-Rental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lease-Rental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E40DE245B50410025DC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E40E0245B50410025DC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE8E40E2245B50410025DC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE8E40E5245B50410025DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE8E40E7245B50420025DC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8E40EA245B50420025DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8E40EC245B50420025DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE8E40F1245B50420025DC25 /* lease-rentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lease-rentalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8E40F5245B50420025DC25 /* lease_rentalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lease_rentalTests.swift; sourceTree = "<group>"; };
-		CE8E40F7245B50420025DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE8E40FC245B50420025DC25 /* lease-rentalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lease-rentalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8E4100245B50420025DC25 /* lease_rentalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lease_rentalUITests.swift; sourceTree = "<group>"; };
-		CE8E4102245B50420025DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8E410E245B52930025DC25 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE8E4110245B53CF0025DC25 /* LeasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeasesViewController.swift; sourceTree = "<group>"; };
+		CE8E4111245B53CF0025DC25 /* LeasesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeasesViewController.xib; sourceTree = "<group>"; };
+		CE8E4114245B55B60025DC25 /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
+		CE8E4116245B56690025DC25 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		CE8E4118245B57750025DC25 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		CE8E411A245BD7E40025DC25 /* LeasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeasesViewModel.swift; sourceTree = "<group>"; };
+		CE8E411C245BEB110025DC25 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE8E40D8245B50410025DC25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40EE245B50420025DC25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40F9245B50420025DC25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				CE8E40DD245B50410025DC25 /* lease-rental */,
-				CE8E40F4245B50420025DC25 /* lease-rentalTests */,
-				CE8E40FF245B50420025DC25 /* lease-rentalUITests */,
 				CE8E40DC245B50410025DC25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,9 +62,7 @@
 		CE8E40DC245B50410025DC25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE8E40DB245B50410025DC25 /* lease-rental.app */,
-				CE8E40F1245B50420025DC25 /* lease-rentalTests.xctest */,
-				CE8E40FC245B50420025DC25 /* lease-rentalUITests.xctest */,
+				CE8E40DB245B50410025DC25 /* Lease-Rental.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,31 +72,20 @@
 			children = (
 				CE8E40DE245B50410025DC25 /* AppDelegate.swift */,
 				CE8E40E0245B50410025DC25 /* SceneDelegate.swift */,
-				CE8E40E2245B50410025DC25 /* ViewController.swift */,
-				CE8E40E4245B50410025DC25 /* Main.storyboard */,
 				CE8E40E7245B50420025DC25 /* Assets.xcassets */,
 				CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */,
 				CE8E40EC245B50420025DC25 /* Info.plist */,
+				CE8E410E245B52930025DC25 /* BaseViewController.swift */,
+				CE8E4110245B53CF0025DC25 /* LeasesViewController.swift */,
+				CE8E4111245B53CF0025DC25 /* LeasesViewController.xib */,
+				CE8E4114245B55B60025DC25 /* CommunicationManager.swift */,
+				CE8E4116245B56690025DC25 /* DataExtension.swift */,
+				CE8E4118245B57750025DC25 /* BundleExtension.swift */,
+				CE8E411A245BD7E40025DC25 /* LeasesViewModel.swift */,
+				CE8E411C245BEB110025DC25 /* Settings.plist */,
+				CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */,
 			);
 			path = "lease-rental";
-			sourceTree = "<group>";
-		};
-		CE8E40F4245B50420025DC25 /* lease-rentalTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE8E40F5245B50420025DC25 /* lease_rentalTests.swift */,
-				CE8E40F7245B50420025DC25 /* Info.plist */,
-			);
-			path = "lease-rentalTests";
-			sourceTree = "<group>";
-		};
-		CE8E40FF245B50420025DC25 /* lease-rentalUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CE8E4100245B50420025DC25 /* lease_rentalUITests.swift */,
-				CE8E4102245B50420025DC25 /* Info.plist */,
-			);
-			path = "lease-rentalUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,44 +105,8 @@
 			);
 			name = "lease-rental";
 			productName = "lease-rental";
-			productReference = CE8E40DB245B50410025DC25 /* lease-rental.app */;
+			productReference = CE8E40DB245B50410025DC25 /* Lease-Rental.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CE8E40F0245B50420025DC25 /* lease-rentalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE8E4108245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalTests" */;
-			buildPhases = (
-				CE8E40ED245B50420025DC25 /* Sources */,
-				CE8E40EE245B50420025DC25 /* Frameworks */,
-				CE8E40EF245B50420025DC25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE8E40F3245B50420025DC25 /* PBXTargetDependency */,
-			);
-			name = "lease-rentalTests";
-			productName = "lease-rentalTests";
-			productReference = CE8E40F1245B50420025DC25 /* lease-rentalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CE8E40FB245B50420025DC25 /* lease-rentalUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE8E410B245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalUITests" */;
-			buildPhases = (
-				CE8E40F8245B50420025DC25 /* Sources */,
-				CE8E40F9245B50420025DC25 /* Frameworks */,
-				CE8E40FA245B50420025DC25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE8E40FE245B50420025DC25 /* PBXTargetDependency */,
-			);
-			name = "lease-rentalUITests";
-			productName = "lease-rentalUITests";
-			productReference = CE8E40FC245B50420025DC25 /* lease-rentalUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,14 +120,6 @@
 				TargetAttributes = {
 					CE8E40DA245B50410025DC25 = {
 						CreatedOnToolsVersion = 11.4.1;
-					};
-					CE8E40F0245B50420025DC25 = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = CE8E40DA245B50410025DC25;
-					};
-					CE8E40FB245B50420025DC25 = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = CE8E40DA245B50410025DC25;
 					};
 				};
 			};
@@ -221,8 +137,6 @@
 			projectRoot = "";
 			targets = (
 				CE8E40DA245B50410025DC25 /* lease-rental */,
-				CE8E40F0245B50420025DC25 /* lease-rentalTests */,
-				CE8E40FB245B50420025DC25 /* lease-rentalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,22 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8E40EB245B50420025DC25 /* LaunchScreen.storyboard in Resources */,
+				CE8E411D245BEB110025DC25 /* Settings.plist in Resources */,
 				CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */,
-				CE8E40E6245B50410025DC25 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40EF245B50420025DC25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40FA245B50420025DC25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CE8E4113245B53CF0025DC25 /* LeasesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,52 +160,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8E40E3245B50410025DC25 /* ViewController.swift in Sources */,
+				CE8E4115245B55B60025DC25 /* CommunicationManager.swift in Sources */,
+				CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */,
+				CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */,
+				CE8E410F245B52930025DC25 /* BaseViewController.swift in Sources */,
+				CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */,
+				CE8E4112245B53CF0025DC25 /* LeasesViewController.swift in Sources */,
+				CE8E411B245BD7E40025DC25 /* LeasesViewModel.swift in Sources */,
 				CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */,
 				CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE8E40ED245B50420025DC25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE8E40F6245B50420025DC25 /* lease_rentalTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40F8245B50420025DC25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE8E4101245B50420025DC25 /* lease_rentalUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		CE8E40F3245B50420025DC25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE8E40DA245B50410025DC25 /* lease-rental */;
-			targetProxy = CE8E40F2245B50420025DC25 /* PBXContainerItemProxy */;
-		};
-		CE8E40FE245B50420025DC25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE8E40DA245B50410025DC25 /* lease-rental */;
-			targetProxy = CE8E40FD245B50420025DC25 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		CE8E40E4245B50410025DC25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE8E40E5245B50410025DC25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lease-Rental";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,93 +330,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lease-Rental";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CE8E4109245B50420025DC25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lease-rental.app/lease-rental";
-			};
-			name = Debug;
-		};
-		CE8E410A245B50420025DC25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lease-rental.app/lease-rental";
-			};
-			name = Release;
-		};
-		CE8E410C245B50420025DC25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "lease-rental";
-			};
-			name = Debug;
-		};
-		CE8E410D245B50420025DC25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "lease-rental";
 			};
 			name = Release;
 		};
@@ -567,24 +353,6 @@
 			buildConfigurations = (
 				CE8E4106245B50420025DC25 /* Debug */,
 				CE8E4107245B50420025DC25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE8E4108245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE8E4109245B50420025DC25 /* Debug */,
-				CE8E410A245B50420025DC25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE8E410B245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE8E410C245B50420025DC25 /* Debug */,
-				CE8E410D245B50420025DC25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
