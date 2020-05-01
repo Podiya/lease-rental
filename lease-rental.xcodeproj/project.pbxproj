@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */; };
+		CE0EACBB245C32C300A2A273 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACBA245C32C300A2A273 /* Colors.xcassets */; };
+		CE0EACBD245C358A00A2A273 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACBC245C358A00A2A273 /* UIViewExtension.swift */; };
+		CE0EACBF245C416B00A2A273 /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACBE245C416B00A2A273 /* UITableExtension.swift */; };
+		CE0EACC2245C447500A2A273 /* LeaseeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACC0245C447500A2A273 /* LeaseeTableViewCell.swift */; };
+		CE0EACC3245C447500A2A273 /* LeaseeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACC1245C447500A2A273 /* LeaseeTableViewCell.xib */; };
 		CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40DE245B50410025DC25 /* AppDelegate.swift */; };
 		CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40E0245B50410025DC25 /* SceneDelegate.swift */; };
 		CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E7245B50420025DC25 /* Assets.xcassets */; };
 		CE8E40EB245B50420025DC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */; };
 		CE8E410F245B52930025DC25 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E410E245B52930025DC25 /* BaseViewController.swift */; };
-		CE8E4112245B53CF0025DC25 /* LeasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4110245B53CF0025DC25 /* LeasesViewController.swift */; };
-		CE8E4113245B53CF0025DC25 /* LeasesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E4111245B53CF0025DC25 /* LeasesViewController.xib */; };
+		CE8E4112245B53CF0025DC25 /* LeaseesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4110245B53CF0025DC25 /* LeaseesViewController.swift */; };
+		CE8E4113245B53CF0025DC25 /* LeaseesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E4111245B53CF0025DC25 /* LeaseesViewController.xib */; };
 		CE8E4115245B55B60025DC25 /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4114245B55B60025DC25 /* CommunicationManager.swift */; };
 		CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4116245B56690025DC25 /* DataExtension.swift */; };
 		CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4118245B57750025DC25 /* BundleExtension.swift */; };
-		CE8E411B245BD7E40025DC25 /* LeasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E411A245BD7E40025DC25 /* LeasesViewModel.swift */; };
+		CE8E411B245BD7E40025DC25 /* LeaseesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */; };
 		CE8E411D245BEB110025DC25 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8E411C245BEB110025DC25 /* Settings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseService.swift; sourceTree = "<group>"; };
+		CE0EACBA245C32C300A2A273 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CE0EACBC245C358A00A2A273 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CE0EACBE245C416B00A2A273 /* UITableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableExtension.swift; sourceTree = "<group>"; };
+		CE0EACC0245C447500A2A273 /* LeaseeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseeTableViewCell.swift; sourceTree = "<group>"; };
+		CE0EACC1245C447500A2A273 /* LeaseeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaseeTableViewCell.xib; sourceTree = "<group>"; };
 		CE8E40DB245B50410025DC25 /* Lease-Rental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lease-Rental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E40DE245B50410025DC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E40E0245B50410025DC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +41,12 @@
 		CE8E40EA245B50420025DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8E40EC245B50420025DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8E410E245B52930025DC25 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		CE8E4110245B53CF0025DC25 /* LeasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeasesViewController.swift; sourceTree = "<group>"; };
-		CE8E4111245B53CF0025DC25 /* LeasesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeasesViewController.xib; sourceTree = "<group>"; };
+		CE8E4110245B53CF0025DC25 /* LeaseesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseesViewController.swift; sourceTree = "<group>"; };
+		CE8E4111245B53CF0025DC25 /* LeaseesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaseesViewController.xib; sourceTree = "<group>"; };
 		CE8E4114245B55B60025DC25 /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
 		CE8E4116245B56690025DC25 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		CE8E4118245B57750025DC25 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		CE8E411A245BD7E40025DC25 /* LeasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeasesViewModel.swift; sourceTree = "<group>"; };
+		CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseesViewModel.swift; sourceTree = "<group>"; };
 		CE8E411C245BEB110025DC25 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,14 +86,19 @@
 				CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */,
 				CE8E40EC245B50420025DC25 /* Info.plist */,
 				CE8E410E245B52930025DC25 /* BaseViewController.swift */,
-				CE8E4110245B53CF0025DC25 /* LeasesViewController.swift */,
-				CE8E4111245B53CF0025DC25 /* LeasesViewController.xib */,
+				CE8E4110245B53CF0025DC25 /* LeaseesViewController.swift */,
+				CE8E4111245B53CF0025DC25 /* LeaseesViewController.xib */,
 				CE8E4114245B55B60025DC25 /* CommunicationManager.swift */,
 				CE8E4116245B56690025DC25 /* DataExtension.swift */,
 				CE8E4118245B57750025DC25 /* BundleExtension.swift */,
-				CE8E411A245BD7E40025DC25 /* LeasesViewModel.swift */,
+				CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */,
 				CE8E411C245BEB110025DC25 /* Settings.plist */,
 				CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */,
+				CE0EACBA245C32C300A2A273 /* Colors.xcassets */,
+				CE0EACBC245C358A00A2A273 /* UIViewExtension.swift */,
+				CE0EACBE245C416B00A2A273 /* UITableExtension.swift */,
+				CE0EACC0245C447500A2A273 /* LeaseeTableViewCell.swift */,
+				CE0EACC1245C447500A2A273 /* LeaseeTableViewCell.xib */,
 			);
 			path = "lease-rental";
 			sourceTree = "<group>";
@@ -146,10 +161,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0EACBB245C32C300A2A273 /* Colors.xcassets in Resources */,
 				CE8E40EB245B50420025DC25 /* LaunchScreen.storyboard in Resources */,
+				CE0EACC3245C447500A2A273 /* LeaseeTableViewCell.xib in Resources */,
 				CE8E411D245BEB110025DC25 /* Settings.plist in Resources */,
 				CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */,
-				CE8E4113245B53CF0025DC25 /* LeasesViewController.xib in Resources */,
+				CE8E4113245B53CF0025DC25 /* LeaseesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,14 +177,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0EACBD245C358A00A2A273 /* UIViewExtension.swift in Sources */,
 				CE8E4115245B55B60025DC25 /* CommunicationManager.swift in Sources */,
 				CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */,
 				CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */,
+				CE0EACBF245C416B00A2A273 /* UITableExtension.swift in Sources */,
 				CE8E410F245B52930025DC25 /* BaseViewController.swift in Sources */,
 				CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */,
-				CE8E4112245B53CF0025DC25 /* LeasesViewController.swift in Sources */,
-				CE8E411B245BD7E40025DC25 /* LeasesViewModel.swift in Sources */,
+				CE8E4112245B53CF0025DC25 /* LeaseesViewController.swift in Sources */,
+				CE8E411B245BD7E40025DC25 /* LeaseesViewModel.swift in Sources */,
 				CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */,
+				CE0EACC2245C447500A2A273 /* LeaseeTableViewCell.swift in Sources */,
 				CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -307,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LN88S2WJ6;
 				INFOPLIST_FILE = "lease-rental/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LN88S2WJ6;
 				INFOPLIST_FILE = "lease-rental/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

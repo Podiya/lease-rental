@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeaseesViewController" customModule="Lease_Rental" customModuleProvider="target">
+            <connections>
+                <outlet property="leaseesTableView" destination="Nmd-cD-flL" id="56z-3i-pPy"/>
+                <outlet property="tableViewParent" destination="fqq-Up-xp6" id="Jld-nL-kHf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Leasees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-kj-xBc">
+                    <rect key="frame" x="33" y="79" width="348" height="42"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                    <color key="textColor" red="0.96078431369999995" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqq-Up-xp6" customClass="RoundedCornersTop" customModule="Lease_Rental" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="156" width="414" height="740"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nmd-cD-flL">
+                            <rect key="frame" x="20" y="40" width="374" height="680"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Nmd-cD-flL" secondAttribute="bottom" constant="20" id="8pX-Y4-0HX"/>
+                        <constraint firstItem="Nmd-cD-flL" firstAttribute="leading" secondItem="fqq-Up-xp6" secondAttribute="leading" constant="20" id="Bvp-5l-7si"/>
+                        <constraint firstAttribute="trailing" secondItem="Nmd-cD-flL" secondAttribute="trailing" constant="20" id="MXb-h4-YQ9"/>
+                        <constraint firstItem="Nmd-cD-flL" firstAttribute="top" secondItem="fqq-Up-xp6" secondAttribute="top" constant="40" id="WMA-Q0-Cbx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="AppRed"/>
+            <constraints>
+                <constraint firstItem="O0M-kj-xBc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="6es-4c-Pfd"/>
+                <constraint firstItem="fqq-Up-xp6" firstAttribute="top" secondItem="O0M-kj-xBc" secondAttribute="bottom" constant="35" id="8sh-BW-Kek"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fqq-Up-xp6" secondAttribute="trailing" id="CCv-XB-Ee5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O0M-kj-xBc" secondAttribute="trailing" constant="33" id="FRr-8T-eMv"/>
+                <constraint firstItem="fqq-Up-xp6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NSu-qi-Ccf"/>
+                <constraint firstAttribute="bottom" secondItem="fqq-Up-xp6" secondAttribute="bottom" id="lY7-M3-WxN"/>
+                <constraint firstItem="O0M-kj-xBc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="xSR-sh-bMc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppRed">
+            <color red="0.9882352941176471" green="0.34901960784313724" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

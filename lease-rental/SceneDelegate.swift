@@ -16,7 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = LeasesViewController(nibName: String(describing: LeasesViewController.self), bundle: nil)
+        let navigationController = UINavigationController(rootViewController: LeaseesViewController(nibName: String(describing: LeaseesViewController.self), bundle: nil))
+        navigationController.isNavigationBarHidden = true
+        window.rootViewController = navigationController
         window.overrideUserInterfaceStyle = .light
         self.window = window
         window.makeKeyAndVisible()
