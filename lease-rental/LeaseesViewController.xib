@@ -21,16 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Leasees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-kj-xBc">
-                    <rect key="frame" x="33" y="79" width="348" height="42"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                    <rect key="frame" x="20" y="79" width="374" height="35"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
                     <color key="textColor" red="0.96078431369999995" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqq-Up-xp6" customClass="RoundedCornersTop" customModule="Lease_Rental" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="156" width="414" height="740"/>
+                    <rect key="frame" x="0.0" y="149" width="414" height="747"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nmd-cD-flL">
-                            <rect key="frame" x="20" y="40" width="374" height="680"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nmd-cD-flL">
+                            <rect key="frame" x="20" y="40" width="374" height="687"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </tableView>
                     </subviews>
@@ -48,10 +48,10 @@
                 <constraint firstItem="O0M-kj-xBc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="6es-4c-Pfd"/>
                 <constraint firstItem="fqq-Up-xp6" firstAttribute="top" secondItem="O0M-kj-xBc" secondAttribute="bottom" constant="35" id="8sh-BW-Kek"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fqq-Up-xp6" secondAttribute="trailing" id="CCv-XB-Ee5"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O0M-kj-xBc" secondAttribute="trailing" constant="33" id="FRr-8T-eMv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O0M-kj-xBc" secondAttribute="trailing" constant="20" id="FRr-8T-eMv"/>
                 <constraint firstItem="fqq-Up-xp6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NSu-qi-Ccf"/>
                 <constraint firstAttribute="bottom" secondItem="fqq-Up-xp6" secondAttribute="bottom" id="lY7-M3-WxN"/>
-                <constraint firstItem="O0M-kj-xBc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="xSR-sh-bMc"/>
+                <constraint firstItem="O0M-kj-xBc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xSR-sh-bMc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>

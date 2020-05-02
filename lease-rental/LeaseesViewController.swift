@@ -56,6 +56,7 @@ extension LeaseesViewController: UITableViewDelegate {
         DispatchQueue.main.async {
             let controller = LeaseRentPaymentsViewController()
             controller.leasee = self.leasees[indexPath.row]
+            controller.isModalInPresentation = true
             self.present(controller, animated: true)
         }
     }

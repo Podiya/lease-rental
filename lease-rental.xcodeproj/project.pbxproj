@@ -16,6 +16,10 @@
 		CE0EACC6245C674700A2A273 /* LeaseRentPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACC4245C674700A2A273 /* LeaseRentPaymentsViewController.swift */; };
 		CE0EACC7245C674700A2A273 /* LeaseRentPaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACC5245C674700A2A273 /* LeaseRentPaymentsViewController.xib */; };
 		CE0EACC9245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACC8245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift */; };
+		CE0EACCB245D998100A2A273 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACCA245D998100A2A273 /* StringExtension.swift */; };
+		CE0EACCD245D999C00A2A273 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACCC245D999C00A2A273 /* DateExtension.swift */; };
+		CE0EACD0245D9EB400A2A273 /* RentalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACCE245D9EB400A2A273 /* RentalTableViewCell.swift */; };
+		CE0EACD1245D9EB400A2A273 /* RentalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACCF245D9EB400A2A273 /* RentalTableViewCell.xib */; };
 		CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40DE245B50410025DC25 /* AppDelegate.swift */; };
 		CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40E0245B50410025DC25 /* SceneDelegate.swift */; };
 		CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E7245B50420025DC25 /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 		CE0EACC4245C674700A2A273 /* LeaseRentPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseRentPaymentsViewController.swift; sourceTree = "<group>"; };
 		CE0EACC5245C674700A2A273 /* LeaseRentPaymentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaseRentPaymentsViewController.xib; sourceTree = "<group>"; };
 		CE0EACC8245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseRentPaymentsViewModel.swift; sourceTree = "<group>"; };
+		CE0EACCA245D998100A2A273 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CE0EACCC245D999C00A2A273 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		CE0EACCE245D9EB400A2A273 /* RentalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalTableViewCell.swift; sourceTree = "<group>"; };
+		CE0EACCF245D9EB400A2A273 /* RentalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RentalTableViewCell.xib; sourceTree = "<group>"; };
 		CE8E40DB245B50410025DC25 /* Lease-Rental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lease-Rental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E40DE245B50410025DC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E40E0245B50410025DC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +116,10 @@
 				CE0EACC4245C674700A2A273 /* LeaseRentPaymentsViewController.swift */,
 				CE0EACC5245C674700A2A273 /* LeaseRentPaymentsViewController.xib */,
 				CE0EACC8245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift */,
+				CE0EACCA245D998100A2A273 /* StringExtension.swift */,
+				CE0EACCC245D999C00A2A273 /* DateExtension.swift */,
+				CE0EACCE245D9EB400A2A273 /* RentalTableViewCell.swift */,
+				CE0EACCF245D9EB400A2A273 /* RentalTableViewCell.xib */,
 			);
 			path = "lease-rental";
 			sourceTree = "<group>";
@@ -171,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0EACC7245C674700A2A273 /* LeaseRentPaymentsViewController.xib in Resources */,
+				CE0EACD1245D9EB400A2A273 /* RentalTableViewCell.xib in Resources */,
 				CE0EACBB245C32C300A2A273 /* Colors.xcassets in Resources */,
 				CE8E40EB245B50420025DC25 /* LaunchScreen.storyboard in Resources */,
 				CE0EACC3245C447500A2A273 /* LeaseeTableViewCell.xib in Resources */,
@@ -187,14 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0EACD0245D9EB400A2A273 /* RentalTableViewCell.swift in Sources */,
 				CE0EACBD245C358A00A2A273 /* UIViewExtension.swift in Sources */,
 				CE8E4115245B55B60025DC25 /* CommunicationManager.swift in Sources */,
+				CE0EACCB245D998100A2A273 /* StringExtension.swift in Sources */,
 				CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */,
 				CE0EACC6245C674700A2A273 /* LeaseRentPaymentsViewController.swift in Sources */,
 				CE0EACC9245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift in Sources */,
 				CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */,
 				CE0EACBF245C416B00A2A273 /* UITableExtension.swift in Sources */,
 				CE8E410F245B52930025DC25 /* BaseViewController.swift in Sources */,
+				CE0EACCD245D999C00A2A273 /* DateExtension.swift in Sources */,
 				CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */,
 				CE8E4112245B53CF0025DC25 /* LeaseesViewController.swift in Sources */,
 				CE8E411B245BD7E40025DC25 /* LeaseesViewModel.swift in Sources */,
