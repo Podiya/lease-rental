@@ -12,7 +12,7 @@ class LeaseesViewController: BaseViewController {
     @IBOutlet weak var tableViewParent: UIView!
     @IBOutlet weak var leaseesTableView: UITableView!
     private let viewModel = LeaseesViewModel()
-    fileprivate var leasees: [Leasees] = [] {
+    fileprivate var leasees: [Leasee] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.leaseesTableView.reloadData()
@@ -37,7 +37,7 @@ class LeaseesViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.viewModel.fetchLeasees()
+        self.viewModel.getLeasees()
     }
     
     private func setupViewModelListners() {
@@ -52,7 +52,13 @@ class LeaseesViewController: BaseViewController {
 
 
 extension LeaseesViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DispatchQueue.main.async {
+            let controller = LeaseRentPaymentsViewController()
+            controller.leasee = self.leasees[indexPath.row]
+            self.present(controller, animated: true)
+        }
+    }
 }
 
 extension LeaseesViewController: UITableViewDataSource {
@@ -113,7 +119,7 @@ class Dynamic<T> {
     }
 }
 
-struct Leasees: Codable {
+struct Leasee: Codable {
     let id: String
     let tenant: String
 }

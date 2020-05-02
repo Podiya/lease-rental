@@ -19,11 +19,11 @@ class BaseViewModel {
 
 class LeaseesViewModel: BaseViewModel {
     let service = LeaseService()
-    var leasees: Dynamic<[Leasees]> = Dynamic([])
+    var leasees: Dynamic<[Leasee]> = Dynamic([])
     
-    func fetchLeasees() {
+    func getLeasees() {
         status.value = .fetching
-        service.fetchLeasees { (leases, error) in
+        service.getLeasees { (leases, error) in
             self.status.value = .done
             if let error = error {
                 self.leasees.value = []

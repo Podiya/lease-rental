@@ -9,8 +9,15 @@
 import Foundation
 
 class LeaseService {
-    func fetchLeasees(completion: @escaping ([Leasees]?, RESTError?)->Void) {
-        let leassesResource = Resource<[Leasees]>(method: .get, route: "/leases")
+    func getLeasees(completion: @escaping ([Leasee]?, RESTError?) -> Void) {
+        let leassesResource = Resource<[Leasee]>(method: .get, route: "/leases")
+        HttpClient.load(resource: leassesResource) { (status, obj, error) in
+            completion(obj, error)
+        }
+    }
+    
+    func getLeaseDetail(id: String, completion: @escaping (LeaseDetail?,RESTError?) -> Void) {
+        let leassesResource = Resource<LeaseDetail>(method: .get, route: "/leases/\(id)")
         HttpClient.load(resource: leassesResource) { (status, obj, error) in
             completion(obj, error)
         }
