@@ -47,6 +47,10 @@ class LeaseesViewController: BaseViewController {
         self.viewModel.leasees.bind { leasees in
             self.leasees = leasees
         }
+        self.viewModel.error.bind { error in
+            guard let error = error else { return }
+            self.showAlert(text: error, type: FloatingAlertType.error)
+        }
     }
 }
 
@@ -78,49 +82,3 @@ extension LeaseesViewController: UITableViewDataSource {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-        coppied from Dino Bartosak
-        https://www.toptal.com/ios/swift-tutorial-introduction-to-mvvm
- */
-class Dynamic<T> {
-    typealias Listener = (T) -> ()
-    var listener: Listener?
-    
-    func bind(_ listener: Listener?) {
-        self.listener = listener
-    }
-    
-    func bindAndFire(_ listener: Listener?) {
-        self.listener = listener
-        listener?(value)
-    }
-    
-    var value: T {
-        didSet {
-            listener?(value)
-        }
-    }
-    
-    init(_ v: T) {
-        value = v
-    }
-}
-
-struct Leasee: Codable {
-    let id: String
-    let tenant: String
-}

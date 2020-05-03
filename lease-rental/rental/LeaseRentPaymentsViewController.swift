@@ -90,11 +90,9 @@ extension LeaseRentPaymentsViewController: UITableViewDataSource {
         cell.from.text = self.rentals[indexPath.row].from.toString()
         cell.to.text = self.rentals[indexPath.row].to.toString()
         cell.days.text = "\(self.rentals[indexPath.row].days)"
-        cell.rental.text = String(format: "%.2f", ceil(self.rentals[indexPath.row].amount * 100) / 100)
+        cell.rental.text = "$\(self.rentals[indexPath.row].rental)"
         
         return cell
     }
-    
-    
 }
 

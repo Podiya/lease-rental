@@ -14,6 +14,7 @@ class RentalTableViewCell: UITableViewCell {
     @IBOutlet weak var to: UILabel!
     @IBOutlet weak var days: UILabel!
     @IBOutlet weak var rental: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

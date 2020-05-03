@@ -15,6 +15,7 @@ enum Status {
 
 class BaseViewModel {
     var status: Dynamic<Status> = Dynamic(Status.done)
+    var error: Dynamic<String?> = Dynamic(nil)
 }
 
 class LeaseesViewModel: BaseViewModel {
@@ -27,6 +28,7 @@ class LeaseesViewModel: BaseViewModel {
             self.status.value = .done
             if let error = error {
                 self.leasees.value = []
+                self.error.value = error.errorDescription
             } else if let leases = leases {
                 self.leasees.value = leases
             }
