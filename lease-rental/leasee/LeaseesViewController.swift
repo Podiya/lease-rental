@@ -12,6 +12,7 @@ class LeaseesViewController: BaseViewController {
     @IBOutlet weak var tableViewParent: UIView!
     @IBOutlet weak var leaseesTableView: UITableView!
     private let viewModel = LeaseesViewModel()
+    private let cellIdentifier = "leasee_Cell"
     fileprivate var leasees: [Leasee] = [] {
         didSet {
             DispatchQueue.main.async {
@@ -26,25 +27,23 @@ class LeaseesViewController: BaseViewController {
         setupViewModelListners()
     }
     
-    private func setupUI() {
-        leaseesTableView.generalSetup(
-            nibName: "LeaseeTableViewCell",
-            cellReuseIdentifier: "leasee_Cell",
-            delegate: self,
-            dataSource: self)
-        
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.viewModel.getLeasees()
     }
     
-    private func setupViewModelListners() {
+    @objc func refreshTable() {
+        self.viewModel.getLeasees(isCheckingStatus: false)
+    }
+}
+
+extension LeaseesViewController: UIViewControllerSetup {
+    func setupViewModelListners() {
         self.viewModel.status.bind { status in
             status == .fetching ? self.showHud() : self.hideHud()
         }
         self.viewModel.leasees.bind { leasees in
+            self.leaseesTableView.endRefreshing()
             self.leasees = leasees
         }
         self.viewModel.error.bind { error in
@@ -52,8 +51,18 @@ class LeaseesViewController: BaseViewController {
             self.showAlert(text: error, type: FloatingAlertType.error)
         }
     }
+    
+    func setupUI() {
+        leaseesTableView.generalSetup(
+            nibName: String(describing: LeaseeTableViewCell.self),
+            cellReuseIdentifier: cellIdentifier,
+            delegate: self,
+            dataSource: self)
+        leaseesTableView.addRefreshController { controller in
+            controller.addTarget(self, action: #selector(self.refreshTable), for: .valueChanged)
+        }
+    }
 }
-
 
 extension LeaseesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -76,7 +85,7 @@ extension LeaseesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "leasee_Cell") as! LeaseeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! LeaseeTableViewCell
         cell.leaseeName.text = self.leasees[indexPath.row].tenant
         return cell
     }

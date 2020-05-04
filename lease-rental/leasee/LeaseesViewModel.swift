@@ -22,8 +22,8 @@ class LeaseesViewModel: BaseViewModel {
     let service = LeaseService()
     var leasees: Dynamic<[Leasee]> = Dynamic([])
     
-    func getLeasees() {
-        status.value = .fetching
+    func getLeasees(isCheckingStatus: Bool = true) {
+        status.value = isCheckingStatus ? .fetching : .done
         service.getLeasees { (leases, error) in
             self.status.value = .done
             if let error = error {

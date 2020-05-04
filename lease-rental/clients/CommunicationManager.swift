@@ -105,7 +105,7 @@ extension RESTError: LocalizedError {
         case .unauthorized:
             return NSLocalizedString("Your request is unauthorized. Please try again or re-login", comment: "RESTError")
         case .somethingWentWrong:
-            return NSLocalizedString("Your request has broken. Please try again or re-login", comment: "RESTError")
+            return NSLocalizedString("Something went wrong. check your connectivity and try again", comment: "RESTError")
         case .custom(let error):
             return NSLocalizedString(error, comment: "RESTError")
         }

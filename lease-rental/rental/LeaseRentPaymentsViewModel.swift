@@ -19,6 +19,7 @@ class LeaseRentPaymentsViewModel: BaseViewModel {
             self.status.value = .done
             if let error = error {
                 self.leaseDetail.value = nil
+                self.error.value = error.errorDescription
             } else if let detail = detail {
                 self.leaseDetail.value = detail
             }
@@ -44,6 +45,7 @@ class LeaseRentPaymentsViewModel: BaseViewModel {
             else { leaseRentals.value = []; return }
         let calendar = Calendar.current
         
+        // Getting first pay date
         var nextStartDate = startDate.next(weekDay, considerToday: true)
         guard let startDiff = diffDays(from: startDate, to: nextStartDate) else {
             leaseRentals.value = []
@@ -55,9 +57,12 @@ class LeaseRentPaymentsViewModel: BaseViewModel {
                         days: startDiff,
                         rentalPerDay: (leaseDetail.rent / 7)))
         let frequencyDateComponents = DateComponents(day: leaseDetail.frequency.value)
+        
+        // Calcualting other pay days
         while endDate > nextStartDate {
             let newDate = calendar.date(byAdding: frequencyDateComponents, to: nextStartDate)!
             if newDate > endDate {
+                // Getting last pay date
                 guard let endDiff = diffDays(from: nextStartDate, to: endDate) else {
                     leaseRentals.value = []
                     return

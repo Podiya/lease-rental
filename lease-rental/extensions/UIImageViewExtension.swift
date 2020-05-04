@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIImageView {
-    func pulsate() {
+    public func pulsate() {
 
         let pulse = CASpringAnimation(keyPath: "transform.scale")
         pulse.duration = 0.2

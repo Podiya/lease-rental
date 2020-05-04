@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class LeaseRentPaymentsViewController: BaseViewController {
     @IBOutlet weak var leaseRentalTableView: UITableView!
     @IBOutlet weak var leaseeNameLabel: UILabel!
@@ -15,10 +16,11 @@ class LeaseRentPaymentsViewController: BaseViewController {
     @IBOutlet weak var endDateLabel: UILabel!
     @IBOutlet weak var basisLabel: UILabel!
     @IBOutlet weak var paymentDayLabel: UILabel!
-    let viewModel = LeaseRentPaymentsViewModel()
+    private let viewModel = LeaseRentPaymentsViewModel()
+    private let cellIdentifier = "rental_cell"
     var leasee: Leasee? = nil
-    var leaseDetail: LeaseDetail? = nil
-    var rentals: [LeaseRental] = [] {
+    private var leaseDetail: LeaseDetail? = nil
+    private var rentals: [LeaseRental] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.leaseRentalTableView.reloadData()
@@ -38,25 +40,6 @@ class LeaseRentPaymentsViewController: BaseViewController {
         self.viewModel.getLeaseDetail(id: leasee.id)
     }
     
-    private func setupViewModelListners() {
-        self.viewModel.status.bind { status in
-            status == .fetching ? self.showHud() : self.hideHud()
-        }
-        self.viewModel.leaseDetail.bind { leaseDetail in
-            self.leaseDetail = leaseDetail
-            self.updateLeaseDetailUI()
-            self.viewModel.calculate()
-        }
-        self.viewModel.leaseRentals.bind { rentals in
-            self.rentals = rentals
-        }
-    }
-    
-    private func setupUI() {
-        leaseRentalTableView.generalSetup(nibName: "RentalTableViewCell", cellReuseIdentifier: "rental_cell", delegate: self, dataSource: self)
-        leaseeNameLabel.text = self.leasee?.tenant ?? ""
-    }
-    
     private func updateLeaseDetailUI() {
         DispatchQueue.main.async {
             self.startDateLabel.text = self.leaseDetail?.startDate ?? ""
@@ -69,6 +52,33 @@ class LeaseRentPaymentsViewController: BaseViewController {
     
     @IBAction func didPressClose(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension LeaseRentPaymentsViewController: UIViewControllerSetup {
+    func setupViewModelListners() {
+        self.viewModel.status.bind { status in
+            status == .fetching ? self.showHud() : self.hideHud()
+        }
+        self.viewModel.leaseDetail.bind { leaseDetail in
+            self.leaseDetail = leaseDetail
+            self.updateLeaseDetailUI()
+            self.viewModel.calculate()
+        }
+        self.viewModel.leaseRentals.bind { rentals in
+            self.rentals = rentals
+        }
+        self.viewModel.error.bind { error in
+            guard let error = error else { return }
+            self.showAlert(text: error, type: FloatingAlertType.error)
+        }
+    }
+    
+     func setupUI() {
+        leaseRentalTableView.generalSetup(nibName: String(describing: RentalTableViewCell.self),
+                                          cellReuseIdentifier: cellIdentifier,
+                                          delegate: self, dataSource: self)
+        leaseeNameLabel.text = self.leasee?.tenant ?? ""
     }
 }
 
@@ -86,7 +96,7 @@ extension LeaseRentPaymentsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "rental_cell") as! RentalTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! RentalTableViewCell
         cell.from.text = self.rentals[indexPath.row].from.toString()
         cell.to.text = self.rentals[indexPath.row].to.toString()
         cell.days.text = "\(self.rentals[indexPath.row].days)"

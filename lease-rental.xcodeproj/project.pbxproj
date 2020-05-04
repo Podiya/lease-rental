@@ -29,6 +29,7 @@
 		CE0EACE9245E078500A2A273 /* PulsateHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACE8245E078500A2A273 /* PulsateHUD.swift */; };
 		CE0EACEB245E07AE00A2A273 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACEA245E07AE00A2A273 /* UIImageViewExtension.swift */; };
 		CE0EACED245E090600A2A273 /* FloatingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACEC245E090600A2A273 /* FloatingAlertView.swift */; };
+		CE0EACEF245F0FAF00A2A273 /* UIViewControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACEE245F0FAF00A2A273 /* UIViewControllerSetup.swift */; };
 		CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40DE245B50410025DC25 /* AppDelegate.swift */; };
 		CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40E0245B50410025DC25 /* SceneDelegate.swift */; };
 		CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E7245B50420025DC25 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		CE0EACE8245E078500A2A273 /* PulsateHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsateHUD.swift; sourceTree = "<group>"; };
 		CE0EACEA245E07AE00A2A273 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		CE0EACEC245E090600A2A273 /* FloatingAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAlertView.swift; sourceTree = "<group>"; };
+		CE0EACEE245F0FAF00A2A273 /* UIViewControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerSetup.swift; sourceTree = "<group>"; };
 		CE8E40DB245B50410025DC25 /* Lease-Rental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lease-Rental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E40DE245B50410025DC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E40E0245B50410025DC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				CE0EACDC245E011A00A2A273 /* Dynamic.swift */,
 				CE0EACE8245E078500A2A273 /* PulsateHUD.swift */,
 				CE0EACEC245E090600A2A273 /* FloatingAlertView.swift */,
+				CE0EACEE245F0FAF00A2A273 /* UIViewControllerSetup.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */,
 				CE0EACC6245C674700A2A273 /* LeaseRentPaymentsViewController.swift in Sources */,
 				CE0EACC9245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift in Sources */,
+				CE0EACEF245F0FAF00A2A273 /* UIViewControllerSetup.swift in Sources */,
 				CE0EACED245E090600A2A273 /* FloatingAlertView.swift in Sources */,
 				CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */,
 				CE0EACBF245C416B00A2A273 /* UITableExtension.swift in Sources */,
