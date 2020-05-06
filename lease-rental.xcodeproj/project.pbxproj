@@ -42,7 +42,7 @@
 		CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4118245B57750025DC25 /* BundleExtension.swift */; };
 		CE8E411B245BD7E40025DC25 /* LeaseesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */; };
 		CE8E411D245BEB110025DC25 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8E411C245BEB110025DC25 /* Settings.plist */; };
-		CEE591EA2461F61500BCA754 /* lease_rental_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE591E92461F61500BCA754 /* lease_rental_tests.swift */; };
+		CEE591EA2461F61500BCA754 /* Lease_Rental_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE591E92461F61500BCA754 /* Lease_Rental_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +94,7 @@
 		CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseesViewModel.swift; sourceTree = "<group>"; };
 		CE8E411C245BEB110025DC25 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		CEE591E72461F61500BCA754 /* lease-rental-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lease-rental-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEE591E92461F61500BCA754 /* lease_rental_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lease_rental_tests.swift; sourceTree = "<group>"; };
+		CEE591E92461F61500BCA754 /* Lease_Rental_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lease_Rental_Tests.swift; sourceTree = "<group>"; };
 		CEE591EB2461F61500BCA754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -260,7 +260,7 @@
 		CEE591E82461F61500BCA754 /* lease-rental-tests */ = {
 			isa = PBXGroup;
 			children = (
-				CEE591E92461F61500BCA754 /* lease_rental_tests.swift */,
+				CEE591E92461F61500BCA754 /* Lease_Rental_Tests.swift */,
 				CEE591EB2461F61500BCA754 /* Info.plist */,
 			);
 			path = "lease-rental-tests";
@@ -406,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE591EA2461F61500BCA754 /* lease_rental_tests.swift in Sources */,
+				CEE591EA2461F61500BCA754 /* Lease_Rental_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

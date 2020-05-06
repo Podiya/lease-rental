@@ -9,7 +9,7 @@
 import XCTest
 @testable import Lease_Rental
 
-class lease_rental_tests: XCTestCase {
+class Lease_Rental_Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -43,6 +43,7 @@ class lease_rental_tests: XCTestCase {
                                               paymentDay: PaymentDay.tuesday)
         let rentals = lrpvm.calculate()
         XCTAssert(rentals.count != 0)
+        XCTAssert(rentals.first?.days == 5)
         XCTAssert(rentals.last?.days == 11)
     }
 }
