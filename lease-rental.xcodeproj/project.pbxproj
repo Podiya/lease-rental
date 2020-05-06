@@ -7,25 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */; };
+		CE0EACBB245C32C300A2A273 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACBA245C32C300A2A273 /* Colors.xcassets */; };
+		CE0EACBD245C358A00A2A273 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACBC245C358A00A2A273 /* UIViewExtension.swift */; };
+		CE0EACBF245C416B00A2A273 /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACBE245C416B00A2A273 /* UITableExtension.swift */; };
+		CE0EACC2245C447500A2A273 /* LeaseeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACC0245C447500A2A273 /* LeaseeTableViewCell.swift */; };
+		CE0EACC3245C447500A2A273 /* LeaseeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACC1245C447500A2A273 /* LeaseeTableViewCell.xib */; };
+		CE0EACC6245C674700A2A273 /* LeaseRentPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACC4245C674700A2A273 /* LeaseRentPaymentsViewController.swift */; };
+		CE0EACC7245C674700A2A273 /* LeaseRentPaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACC5245C674700A2A273 /* LeaseRentPaymentsViewController.xib */; };
+		CE0EACC9245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACC8245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift */; };
+		CE0EACCB245D998100A2A273 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACCA245D998100A2A273 /* StringExtension.swift */; };
+		CE0EACCD245D999C00A2A273 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACCC245D999C00A2A273 /* DateExtension.swift */; };
+		CE0EACD0245D9EB400A2A273 /* RentalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACCE245D9EB400A2A273 /* RentalTableViewCell.swift */; };
+		CE0EACD1245D9EB400A2A273 /* RentalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EACCF245D9EB400A2A273 /* RentalTableViewCell.xib */; };
+		CE0EACDD245E011A00A2A273 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACDC245E011A00A2A273 /* Dynamic.swift */; };
+		CE0EACDF245E014600A2A273 /* Leasee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACDE245E014600A2A273 /* Leasee.swift */; };
+		CE0EACE1245E019D00A2A273 /* PaymentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACE0245E019D00A2A273 /* PaymentDay.swift */; };
+		CE0EACE3245E01B300A2A273 /* PaymentFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACE2245E01B300A2A273 /* PaymentFrequency.swift */; };
+		CE0EACE5245E01C500A2A273 /* LeaseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACE4245E01C500A2A273 /* LeaseDetail.swift */; };
+		CE0EACE7245E01E000A2A273 /* LeaseRental.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACE6245E01E000A2A273 /* LeaseRental.swift */; };
+		CE0EACE9245E078500A2A273 /* PulsateHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACE8245E078500A2A273 /* PulsateHUD.swift */; };
+		CE0EACEB245E07AE00A2A273 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACEA245E07AE00A2A273 /* UIImageViewExtension.swift */; };
+		CE0EACED245E090600A2A273 /* FloatingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACEC245E090600A2A273 /* FloatingAlertView.swift */; };
+		CE0EACEF245F0FAF00A2A273 /* UIViewControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EACEE245F0FAF00A2A273 /* UIViewControllerSetup.swift */; };
 		CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40DE245B50410025DC25 /* AppDelegate.swift */; };
 		CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40E0245B50410025DC25 /* SceneDelegate.swift */; };
-		CE8E40E3245B50410025DC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40E2245B50410025DC25 /* ViewController.swift */; };
-		CE8E40E6245B50410025DC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E4245B50410025DC25 /* Main.storyboard */; };
 		CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E7245B50420025DC25 /* Assets.xcassets */; };
 		CE8E40EB245B50420025DC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */; };
-		CE8E40F6245B50420025DC25 /* lease_rentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E40F5245B50420025DC25 /* lease_rentalTests.swift */; };
-		CE8E4101245B50420025DC25 /* lease_rentalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4100245B50420025DC25 /* lease_rentalUITests.swift */; };
+		CE8E410F245B52930025DC25 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E410E245B52930025DC25 /* BaseViewController.swift */; };
+		CE8E4112245B53CF0025DC25 /* LeaseesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4110245B53CF0025DC25 /* LeaseesViewController.swift */; };
+		CE8E4113245B53CF0025DC25 /* LeaseesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E4111245B53CF0025DC25 /* LeaseesViewController.xib */; };
+		CE8E4115245B55B60025DC25 /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4114245B55B60025DC25 /* CommunicationManager.swift */; };
+		CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4116245B56690025DC25 /* DataExtension.swift */; };
+		CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4118245B57750025DC25 /* BundleExtension.swift */; };
+		CE8E411B245BD7E40025DC25 /* LeaseesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */; };
+		CE8E411D245BEB110025DC25 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8E411C245BEB110025DC25 /* Settings.plist */; };
+		CEE591EA2461F61500BCA754 /* Lease_Rental_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE591E92461F61500BCA754 /* Lease_Rental_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE8E40F2245B50420025DC25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE8E40D3245B50410025DC25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE8E40DA245B50410025DC25;
-			remoteInfo = "lease-rental";
-		};
-		CE8E40FD245B50420025DC25 /* PBXContainerItemProxy */ = {
+		CEE591EC2461F61500BCA754 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE8E40D3245B50410025DC25 /* Project object */;
 			proxyType = 1;
@@ -35,20 +56,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE8E40DB245B50410025DC25 /* lease-rental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lease-rental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseService.swift; sourceTree = "<group>"; };
+		CE0EACBA245C32C300A2A273 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CE0EACBC245C358A00A2A273 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CE0EACBE245C416B00A2A273 /* UITableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableExtension.swift; sourceTree = "<group>"; };
+		CE0EACC0245C447500A2A273 /* LeaseeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseeTableViewCell.swift; sourceTree = "<group>"; };
+		CE0EACC1245C447500A2A273 /* LeaseeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaseeTableViewCell.xib; sourceTree = "<group>"; };
+		CE0EACC4245C674700A2A273 /* LeaseRentPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseRentPaymentsViewController.swift; sourceTree = "<group>"; };
+		CE0EACC5245C674700A2A273 /* LeaseRentPaymentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaseRentPaymentsViewController.xib; sourceTree = "<group>"; };
+		CE0EACC8245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseRentPaymentsViewModel.swift; sourceTree = "<group>"; };
+		CE0EACCA245D998100A2A273 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CE0EACCC245D999C00A2A273 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		CE0EACCE245D9EB400A2A273 /* RentalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalTableViewCell.swift; sourceTree = "<group>"; };
+		CE0EACCF245D9EB400A2A273 /* RentalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RentalTableViewCell.xib; sourceTree = "<group>"; };
+		CE0EACDC245E011A00A2A273 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		CE0EACDE245E014600A2A273 /* Leasee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leasee.swift; sourceTree = "<group>"; };
+		CE0EACE0245E019D00A2A273 /* PaymentDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDay.swift; sourceTree = "<group>"; };
+		CE0EACE2245E01B300A2A273 /* PaymentFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFrequency.swift; sourceTree = "<group>"; };
+		CE0EACE4245E01C500A2A273 /* LeaseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseDetail.swift; sourceTree = "<group>"; };
+		CE0EACE6245E01E000A2A273 /* LeaseRental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseRental.swift; sourceTree = "<group>"; };
+		CE0EACE8245E078500A2A273 /* PulsateHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsateHUD.swift; sourceTree = "<group>"; };
+		CE0EACEA245E07AE00A2A273 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		CE0EACEC245E090600A2A273 /* FloatingAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAlertView.swift; sourceTree = "<group>"; };
+		CE0EACEE245F0FAF00A2A273 /* UIViewControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerSetup.swift; sourceTree = "<group>"; };
+		CE8E40DB245B50410025DC25 /* Lease-Rental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lease-Rental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E40DE245B50410025DC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E40E0245B50410025DC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE8E40E2245B50410025DC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE8E40E5245B50410025DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE8E40E7245B50420025DC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8E40EA245B50420025DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8E40EC245B50420025DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE8E40F1245B50420025DC25 /* lease-rentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lease-rentalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8E40F5245B50420025DC25 /* lease_rentalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lease_rentalTests.swift; sourceTree = "<group>"; };
-		CE8E40F7245B50420025DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE8E40FC245B50420025DC25 /* lease-rentalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lease-rentalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8E4100245B50420025DC25 /* lease_rentalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lease_rentalUITests.swift; sourceTree = "<group>"; };
-		CE8E4102245B50420025DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8E410E245B52930025DC25 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE8E4110245B53CF0025DC25 /* LeaseesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseesViewController.swift; sourceTree = "<group>"; };
+		CE8E4111245B53CF0025DC25 /* LeaseesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaseesViewController.xib; sourceTree = "<group>"; };
+		CE8E4114245B55B60025DC25 /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
+		CE8E4116245B56690025DC25 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		CE8E4118245B57750025DC25 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseesViewModel.swift; sourceTree = "<group>"; };
+		CE8E411C245BEB110025DC25 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		CEE591E72461F61500BCA754 /* lease-rental-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lease-rental-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE591E92461F61500BCA754 /* Lease_Rental_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lease_Rental_Tests.swift; sourceTree = "<group>"; };
+		CEE591EB2461F61500BCA754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +106,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE8E40EE245B50420025DC25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40F9245B50420025DC25 /* Frameworks */ = {
+		CEE591E42461F61500BCA754 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,12 +116,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0EACD2245DFD2800A2A273 /* leasee */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E4110245B53CF0025DC25 /* LeaseesViewController.swift */,
+				CE8E4111245B53CF0025DC25 /* LeaseesViewController.xib */,
+				CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */,
+				CE0EACD4245DFD4000A2A273 /* models */,
+				CE0EACD3245DFD3500A2A273 /* views */,
+			);
+			path = leasee;
+			sourceTree = "<group>";
+		};
+		CE0EACD3245DFD3500A2A273 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EACC0245C447500A2A273 /* LeaseeTableViewCell.swift */,
+				CE0EACC1245C447500A2A273 /* LeaseeTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CE0EACD4245DFD4000A2A273 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EACDE245E014600A2A273 /* Leasee.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CE0EACD5245DFD9100A2A273 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E4116245B56690025DC25 /* DataExtension.swift */,
+				CE8E4118245B57750025DC25 /* BundleExtension.swift */,
+				CE0EACBC245C358A00A2A273 /* UIViewExtension.swift */,
+				CE0EACBE245C416B00A2A273 /* UITableExtension.swift */,
+				CE0EACCA245D998100A2A273 /* StringExtension.swift */,
+				CE0EACCC245D999C00A2A273 /* DateExtension.swift */,
+				CE0EACEA245E07AE00A2A273 /* UIImageViewExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		CE0EACD6245DFDFD00A2A273 /* rental */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EACC4245C674700A2A273 /* LeaseRentPaymentsViewController.swift */,
+				CE0EACC5245C674700A2A273 /* LeaseRentPaymentsViewController.xib */,
+				CE0EACC8245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift */,
+				CE0EACD9245DFE9400A2A273 /* models */,
+				CE0EACD8245DFE8900A2A273 /* views */,
+			);
+			path = rental;
+			sourceTree = "<group>";
+		};
+		CE0EACD7245DFE2B00A2A273 /* clients */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E4114245B55B60025DC25 /* CommunicationManager.swift */,
+			);
+			path = clients;
+			sourceTree = "<group>";
+		};
+		CE0EACD8245DFE8900A2A273 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EACCE245D9EB400A2A273 /* RentalTableViewCell.swift */,
+				CE0EACCF245D9EB400A2A273 /* RentalTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CE0EACD9245DFE9400A2A273 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EACE0245E019D00A2A273 /* PaymentDay.swift */,
+				CE0EACE2245E01B300A2A273 /* PaymentFrequency.swift */,
+				CE0EACE4245E01C500A2A273 /* LeaseDetail.swift */,
+				CE0EACE6245E01E000A2A273 /* LeaseRental.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CE0EACDA245E00D000A2A273 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		CE0EACDB245E010800A2A273 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EACDC245E011A00A2A273 /* Dynamic.swift */,
+				CE0EACE8245E078500A2A273 /* PulsateHUD.swift */,
+				CE0EACEC245E090600A2A273 /* FloatingAlertView.swift */,
+				CE0EACEE245F0FAF00A2A273 /* UIViewControllerSetup.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		CE8E40D2245B50410025DC25 = {
 			isa = PBXGroup;
 			children = (
 				CE8E40DD245B50410025DC25 /* lease-rental */,
-				CE8E40F4245B50420025DC25 /* lease-rentalTests */,
-				CE8E40FF245B50420025DC25 /* lease-rentalUITests */,
+				CEE591E82461F61500BCA754 /* lease-rental-tests */,
 				CE8E40DC245B50410025DC25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,9 +230,8 @@
 		CE8E40DC245B50410025DC25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE8E40DB245B50410025DC25 /* lease-rental.app */,
-				CE8E40F1245B50420025DC25 /* lease-rentalTests.xctest */,
-				CE8E40FC245B50420025DC25 /* lease-rentalUITests.xctest */,
+				CE8E40DB245B50410025DC25 /* Lease-Rental.app */,
+				CEE591E72461F61500BCA754 /* lease-rental-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,31 +241,29 @@
 			children = (
 				CE8E40DE245B50410025DC25 /* AppDelegate.swift */,
 				CE8E40E0245B50410025DC25 /* SceneDelegate.swift */,
-				CE8E40E2245B50410025DC25 /* ViewController.swift */,
-				CE8E40E4245B50410025DC25 /* Main.storyboard */,
 				CE8E40E7245B50420025DC25 /* Assets.xcassets */,
 				CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */,
 				CE8E40EC245B50420025DC25 /* Info.plist */,
+				CE8E410E245B52930025DC25 /* BaseViewController.swift */,
+				CE8E411C245BEB110025DC25 /* Settings.plist */,
+				CE0EACBA245C32C300A2A273 /* Colors.xcassets */,
+				CE0EACD2245DFD2800A2A273 /* leasee */,
+				CE0EACD6245DFDFD00A2A273 /* rental */,
+				CE0EACDA245E00D000A2A273 /* services */,
+				CE0EACDB245E010800A2A273 /* models */,
+				CE0EACD7245DFE2B00A2A273 /* clients */,
+				CE0EACD5245DFD9100A2A273 /* extensions */,
 			);
 			path = "lease-rental";
 			sourceTree = "<group>";
 		};
-		CE8E40F4245B50420025DC25 /* lease-rentalTests */ = {
+		CEE591E82461F61500BCA754 /* lease-rental-tests */ = {
 			isa = PBXGroup;
 			children = (
-				CE8E40F5245B50420025DC25 /* lease_rentalTests.swift */,
-				CE8E40F7245B50420025DC25 /* Info.plist */,
+				CEE591E92461F61500BCA754 /* Lease_Rental_Tests.swift */,
+				CEE591EB2461F61500BCA754 /* Info.plist */,
 			);
-			path = "lease-rentalTests";
-			sourceTree = "<group>";
-		};
-		CE8E40FF245B50420025DC25 /* lease-rentalUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CE8E4100245B50420025DC25 /* lease_rentalUITests.swift */,
-				CE8E4102245B50420025DC25 /* Info.plist */,
-			);
-			path = "lease-rentalUITests";
+			path = "lease-rental-tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,44 +283,26 @@
 			);
 			name = "lease-rental";
 			productName = "lease-rental";
-			productReference = CE8E40DB245B50410025DC25 /* lease-rental.app */;
+			productReference = CE8E40DB245B50410025DC25 /* Lease-Rental.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE8E40F0245B50420025DC25 /* lease-rentalTests */ = {
+		CEE591E62461F61500BCA754 /* lease-rental-tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE8E4108245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalTests" */;
+			buildConfigurationList = CEE591F02461F61500BCA754 /* Build configuration list for PBXNativeTarget "lease-rental-tests" */;
 			buildPhases = (
-				CE8E40ED245B50420025DC25 /* Sources */,
-				CE8E40EE245B50420025DC25 /* Frameworks */,
-				CE8E40EF245B50420025DC25 /* Resources */,
+				CEE591E32461F61500BCA754 /* Sources */,
+				CEE591E42461F61500BCA754 /* Frameworks */,
+				CEE591E52461F61500BCA754 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE8E40F3245B50420025DC25 /* PBXTargetDependency */,
+				CEE591ED2461F61500BCA754 /* PBXTargetDependency */,
 			);
-			name = "lease-rentalTests";
-			productName = "lease-rentalTests";
-			productReference = CE8E40F1245B50420025DC25 /* lease-rentalTests.xctest */;
+			name = "lease-rental-tests";
+			productName = "lease-rental-tests";
+			productReference = CEE591E72461F61500BCA754 /* lease-rental-tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CE8E40FB245B50420025DC25 /* lease-rentalUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE8E410B245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalUITests" */;
-			buildPhases = (
-				CE8E40F8245B50420025DC25 /* Sources */,
-				CE8E40F9245B50420025DC25 /* Frameworks */,
-				CE8E40FA245B50420025DC25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE8E40FE245B50420025DC25 /* PBXTargetDependency */,
-			);
-			name = "lease-rentalUITests";
-			productName = "lease-rentalUITests";
-			productReference = CE8E40FC245B50420025DC25 /* lease-rentalUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,11 +317,7 @@
 					CE8E40DA245B50410025DC25 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
-					CE8E40F0245B50420025DC25 = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = CE8E40DA245B50410025DC25;
-					};
-					CE8E40FB245B50420025DC25 = {
+					CEE591E62461F61500BCA754 = {
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = CE8E40DA245B50410025DC25;
 					};
@@ -221,8 +337,7 @@
 			projectRoot = "";
 			targets = (
 				CE8E40DA245B50410025DC25 /* lease-rental */,
-				CE8E40F0245B50420025DC25 /* lease-rentalTests */,
-				CE8E40FB245B50420025DC25 /* lease-rentalUITests */,
+				CEE591E62461F61500BCA754 /* lease-rental-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,20 +347,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0EACC7245C674700A2A273 /* LeaseRentPaymentsViewController.xib in Resources */,
+				CE0EACD1245D9EB400A2A273 /* RentalTableViewCell.xib in Resources */,
+				CE0EACBB245C32C300A2A273 /* Colors.xcassets in Resources */,
 				CE8E40EB245B50420025DC25 /* LaunchScreen.storyboard in Resources */,
+				CE0EACC3245C447500A2A273 /* LeaseeTableViewCell.xib in Resources */,
+				CE8E411D245BEB110025DC25 /* Settings.plist in Resources */,
 				CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */,
-				CE8E40E6245B50410025DC25 /* Main.storyboard in Resources */,
+				CE8E4113245B53CF0025DC25 /* LeaseesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE8E40EF245B50420025DC25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40FA245B50420025DC25 /* Resources */ = {
+		CEE591E52461F61500BCA754 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,52 +372,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8E40E3245B50410025DC25 /* ViewController.swift in Sources */,
+				CE0EACEB245E07AE00A2A273 /* UIImageViewExtension.swift in Sources */,
+				CE0EACD0245D9EB400A2A273 /* RentalTableViewCell.swift in Sources */,
+				CE0EACBD245C358A00A2A273 /* UIViewExtension.swift in Sources */,
+				CE0EACE9245E078500A2A273 /* PulsateHUD.swift in Sources */,
+				CE8E4115245B55B60025DC25 /* CommunicationManager.swift in Sources */,
+				CE0EACE5245E01C500A2A273 /* LeaseDetail.swift in Sources */,
+				CE0EACE7245E01E000A2A273 /* LeaseRental.swift in Sources */,
+				CE0EACDD245E011A00A2A273 /* Dynamic.swift in Sources */,
+				CE0EACCB245D998100A2A273 /* StringExtension.swift in Sources */,
+				CE0EACDF245E014600A2A273 /* Leasee.swift in Sources */,
+				CE0EAC8F245C1C2200A2A273 /* LeaseService.swift in Sources */,
+				CE0EACC6245C674700A2A273 /* LeaseRentPaymentsViewController.swift in Sources */,
+				CE0EACC9245C6A2000A2A273 /* LeaseRentPaymentsViewModel.swift in Sources */,
+				CE0EACEF245F0FAF00A2A273 /* UIViewControllerSetup.swift in Sources */,
+				CE0EACED245E090600A2A273 /* FloatingAlertView.swift in Sources */,
+				CE8E4117245B56690025DC25 /* DataExtension.swift in Sources */,
+				CE0EACBF245C416B00A2A273 /* UITableExtension.swift in Sources */,
+				CE0EACE1245E019D00A2A273 /* PaymentDay.swift in Sources */,
+				CE8E410F245B52930025DC25 /* BaseViewController.swift in Sources */,
+				CE0EACCD245D999C00A2A273 /* DateExtension.swift in Sources */,
+				CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */,
+				CE0EACE3245E01B300A2A273 /* PaymentFrequency.swift in Sources */,
+				CE8E4112245B53CF0025DC25 /* LeaseesViewController.swift in Sources */,
+				CE8E411B245BD7E40025DC25 /* LeaseesViewModel.swift in Sources */,
 				CE8E40DF245B50410025DC25 /* AppDelegate.swift in Sources */,
+				CE0EACC2245C447500A2A273 /* LeaseeTableViewCell.swift in Sources */,
 				CE8E40E1245B50410025DC25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE8E40ED245B50420025DC25 /* Sources */ = {
+		CEE591E32461F61500BCA754 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8E40F6245B50420025DC25 /* lease_rentalTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE8E40F8245B50420025DC25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE8E4101245B50420025DC25 /* lease_rentalUITests.swift in Sources */,
+				CEE591EA2461F61500BCA754 /* Lease_Rental_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE8E40F3245B50420025DC25 /* PBXTargetDependency */ = {
+		CEE591ED2461F61500BCA754 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE8E40DA245B50410025DC25 /* lease-rental */;
-			targetProxy = CE8E40F2245B50420025DC25 /* PBXContainerItemProxy */;
-		};
-		CE8E40FE245B50420025DC25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE8E40DA245B50410025DC25 /* lease-rental */;
-			targetProxy = CE8E40FD245B50420025DC25 /* PBXContainerItemProxy */;
+			targetProxy = CEE591EC2461F61500BCA754 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE8E40E4245B50410025DC25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE8E40E5245B50410025DC25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,12 +553,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LN88S2WJ6;
 				INFOPLIST_FILE = "lease-rental/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lease-Rental";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,98 +572,57 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LN88S2WJ6;
 				INFOPLIST_FILE = "lease-rental/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lease-Rental";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		CE8E4109245B50420025DC25 /* Debug */ = {
+		CEE591EE2461F61500BCA754 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				INFOPLIST_FILE = "lease-rental-tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lease-rental.app/lease-rental";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lease-Rental.app/Lease-Rental";
 			};
 			name = Debug;
 		};
-		CE8E410A245B50420025DC25 /* Release */ = {
+		CEE591EF2461F61500BCA754 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				INFOPLIST_FILE = "lease-rental-tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lease-rental.app/lease-rental";
-			};
-			name = Release;
-		};
-		CE8E410C245B50420025DC25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "lease-rental";
-			};
-			name = Debug;
-		};
-		CE8E410D245B50420025DC25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LN88S2WJ6;
-				INFOPLIST_FILE = "lease-rentalUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rentalUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "lease-rental";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lease-Rental.app/Lease-Rental";
 			};
 			name = Release;
 		};
@@ -571,20 +647,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE8E4108245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalTests" */ = {
+		CEE591F02461F61500BCA754 /* Build configuration list for PBXNativeTarget "lease-rental-tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE8E4109245B50420025DC25 /* Debug */,
-				CE8E410A245B50420025DC25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE8E410B245B50420025DC25 /* Build configuration list for PBXNativeTarget "lease-rentalUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE8E410C245B50420025DC25 /* Debug */,
-				CE8E410D245B50420025DC25 /* Release */,
+				CEE591EE2461F61500BCA754 /* Debug */,
+				CEE591EF2461F61500BCA754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
