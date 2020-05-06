@@ -42,7 +42,18 @@
 		CE8E4119245B57750025DC25 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E4118245B57750025DC25 /* BundleExtension.swift */; };
 		CE8E411B245BD7E40025DC25 /* LeaseesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */; };
 		CE8E411D245BEB110025DC25 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8E411C245BEB110025DC25 /* Settings.plist */; };
+		CEE591EA2461F61500BCA754 /* lease_rental_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE591E92461F61500BCA754 /* lease_rental_tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEE591EC2461F61500BCA754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8E40D3245B50410025DC25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8E40DA245B50410025DC25;
+			remoteInfo = "lease-rental";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CE0EAC8E245C1C2200A2A273 /* LeaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseService.swift; sourceTree = "<group>"; };
@@ -82,10 +93,20 @@
 		CE8E4118245B57750025DC25 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		CE8E411A245BD7E40025DC25 /* LeaseesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseesViewModel.swift; sourceTree = "<group>"; };
 		CE8E411C245BEB110025DC25 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		CEE591E72461F61500BCA754 /* lease-rental-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lease-rental-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE591E92461F61500BCA754 /* lease_rental_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lease_rental_tests.swift; sourceTree = "<group>"; };
+		CEE591EB2461F61500BCA754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE8E40D8245B50410025DC25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE591E42461F61500BCA754 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8E40DD245B50410025DC25 /* lease-rental */,
+				CEE591E82461F61500BCA754 /* lease-rental-tests */,
 				CE8E40DC245B50410025DC25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -209,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8E40DB245B50410025DC25 /* Lease-Rental.app */,
+				CEE591E72461F61500BCA754 /* lease-rental-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +257,15 @@
 			path = "lease-rental";
 			sourceTree = "<group>";
 		};
+		CEE591E82461F61500BCA754 /* lease-rental-tests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE591E92461F61500BCA754 /* lease_rental_tests.swift */,
+				CEE591EB2461F61500BCA754 /* Info.plist */,
+			);
+			path = "lease-rental-tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,6 +286,24 @@
 			productReference = CE8E40DB245B50410025DC25 /* Lease-Rental.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CEE591E62461F61500BCA754 /* lease-rental-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE591F02461F61500BCA754 /* Build configuration list for PBXNativeTarget "lease-rental-tests" */;
+			buildPhases = (
+				CEE591E32461F61500BCA754 /* Sources */,
+				CEE591E42461F61500BCA754 /* Frameworks */,
+				CEE591E52461F61500BCA754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE591ED2461F61500BCA754 /* PBXTargetDependency */,
+			);
+			name = "lease-rental-tests";
+			productName = "lease-rental-tests";
+			productReference = CEE591E72461F61500BCA754 /* lease-rental-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -266,6 +316,10 @@
 				TargetAttributes = {
 					CE8E40DA245B50410025DC25 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					CEE591E62461F61500BCA754 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = CE8E40DA245B50410025DC25;
 					};
 				};
 			};
@@ -283,6 +337,7 @@
 			projectRoot = "";
 			targets = (
 				CE8E40DA245B50410025DC25 /* lease-rental */,
+				CEE591E62461F61500BCA754 /* lease-rental-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +355,13 @@
 				CE8E411D245BEB110025DC25 /* Settings.plist in Resources */,
 				CE8E40E8245B50420025DC25 /* Assets.xcassets in Resources */,
 				CE8E4113245B53CF0025DC25 /* LeaseesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE591E52461F61500BCA754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +402,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE591E32461F61500BCA754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE591EA2461F61500BCA754 /* lease_rental_tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE591ED2461F61500BCA754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8E40DA245B50410025DC25 /* lease-rental */;
+			targetProxy = CEE591EC2461F61500BCA754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE8E40E9245B50420025DC25 /* LaunchScreen.storyboard */ = {
@@ -506,6 +584,48 @@
 			};
 			name = Release;
 		};
+		CEE591EE2461F61500BCA754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LN88S2WJ6;
+				INFOPLIST_FILE = "lease-rental-tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lease-Rental.app/Lease-Rental";
+			};
+			name = Debug;
+		};
+		CEE591EF2461F61500BCA754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LN88S2WJ6;
+				INFOPLIST_FILE = "lease-rental-tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.different.lease-rental-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lease-Rental.app/Lease-Rental";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +643,15 @@
 			buildConfigurations = (
 				CE8E4106245B50420025DC25 /* Debug */,
 				CE8E4107245B50420025DC25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE591F02461F61500BCA754 /* Build configuration list for PBXNativeTarget "lease-rental-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE591EE2461F61500BCA754 /* Debug */,
+				CEE591EF2461F61500BCA754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

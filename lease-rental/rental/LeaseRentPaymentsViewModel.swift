@@ -31,25 +31,27 @@ class LeaseRentPaymentsViewModel: BaseViewModel {
     }
     
     /**
-            calculate lease rentals from lease detail
+     calculate lease rentals from lease detail
+     had to add discardableResult unit testing
      */
-    func calculate() {
+    @discardableResult
+    func calculate() -> [LeaseRental] {
         var leaasRentals = [LeaseRental]()
         guard let leaseDetail = self.leaseDetail.value else {
             leaseRentals.value = []
-            return
+            return []
         }
         guard let startDate = leaseDetail.start,
             let endDate = leaseDetail.end,
             let weekDay = Date.Weekday(rawValue: leaseDetail.paymentDay.day)
-            else { leaseRentals.value = []; return }
+            else { leaseRentals.value = []; return [] }
         let calendar = Calendar.current
         
         // Getting first pay date
         var nextStartDate = startDate.next(weekDay, considerToday: true)
         guard let startDiff = diffDays(from: startDate, to: nextStartDate) else {
             leaseRentals.value = []
-            return
+            return []
         }
         add(leaasRentals: &leaasRentals, leaasRental:
             LeaseRental(from: startDate,
@@ -65,7 +67,7 @@ class LeaseRentPaymentsViewModel: BaseViewModel {
                 // Getting last pay date
                 guard let endDiff = diffDays(from: nextStartDate, to: endDate) else {
                     leaseRentals.value = []
-                    return
+                    return []
                 }
                 add(leaasRentals: &leaasRentals, leaasRental:
                     LeaseRental(from: nextStartDate,
@@ -76,7 +78,7 @@ class LeaseRentPaymentsViewModel: BaseViewModel {
             }
             guard let nextDiff = diffDays(from: nextStartDate, to: newDate) else {
                 leaseRentals.value = []
-                return
+                return []
             }
             add(leaasRentals: &leaasRentals, leaasRental:
                 LeaseRental(from: nextStartDate,
@@ -87,6 +89,7 @@ class LeaseRentPaymentsViewModel: BaseViewModel {
             nextStartDate = newDate
         }
         self.leaseRentals.value = leaasRentals
+        return leaasRentals
     }
     
     func add(leaasRentals: inout [LeaseRental], leaasRental: LeaseRental) {
